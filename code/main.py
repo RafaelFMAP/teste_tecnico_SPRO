@@ -49,6 +49,9 @@ aggr_pipeline = [
         }
     },
     {
+        "$project": { "Montadoras.País": 0 }
+    },
+    {
         "$unwind": "$País"
     },
     {
